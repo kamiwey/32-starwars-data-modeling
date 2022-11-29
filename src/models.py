@@ -31,7 +31,7 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     username = Column(String(120), nullable=False)
     email = Column(String(250), nullable=False)
-    Password =Column (Integer)
+    Password =Column (string(50), nullable=False)
 
 class Planets(Base):
     __tablename__ = 'planets'
